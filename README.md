@@ -1,11 +1,11 @@
-![TensorWar](images/TensorWarIconAlpha.png)
-
-**TensorWar** is a machine learning environment made with
+**TensorWar** is a machine learning environment fot the Unity Gmade with
 Unity and the ml-agents toolkit. It pits tanks against one another, armed with
 a battle ready neural network you train, and a cannon. The tanks can be user
 controlled with either a keyboard or a controller. This is a WIP. It's
 the first thing I've ever tried to code myself and the first time
 I've used a game engine.
+![TensorWar](images/TensorWarIconAlpha.png)
+
 
 **Training:**
 ![PlaneTraining](images/PlaneTrainingcap.png)
