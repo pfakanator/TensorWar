@@ -1,5 +1,5 @@
 **TensorWar** is a machine learning environment made with
-Unity and the ml-agents toolkit. It pits tanks against one another, armed with
+Unity and the ML-Agents toolkit. It pits tanks against one another, armed with
 a battle ready neural network you train, and a cannon. The tanks can be user
 controlled with either a keyboard or a controller. This is a WIP. It's
 the first thing I've ever tried to code myself and the first time
