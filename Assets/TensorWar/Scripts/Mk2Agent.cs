@@ -50,6 +50,12 @@ namespace TensorWar
                 currentAmmo = startingAmmo;
             }
 
+            if (col.gameObject.CompareTag("wall"))
+            {
+                AddReward(wallImpactPenalty);
+                // Debug.Log("<color=orange> ---Wall Impact!!--- </color>" + wallImpactPenalty);
+            }
+            
             // if (col.gameObject.CompareTag("health"))
             // {
             //     AddReward(touchedHealthReward);
@@ -60,11 +66,6 @@ namespace TensorWar
             //
             // }
 
-            if (col.gameObject.CompareTag("wall"))
-            {
-                AddReward(wallImpactPenalty);
-                // Debug.Log("<color=orange> ---Wall Impact!!--- </color>" + wallImpactPenalty);
-            }
         }
 
         public override void OnEpisodeBegin()
@@ -102,6 +103,7 @@ namespace TensorWar
                 // Debug.Log("<color=red>***---Got that Fool!----***</color>" +targetKillReward);
                 // EndEpisode();
             }
+            
             AddReward(-1f / MaxStep);
 
             if (!useVectorObs)
@@ -164,7 +166,7 @@ namespace TensorWar
             var actions = actionBuffers.DiscreteActions;
             Battle(actions);
 
-            if (transform.localPosition.y < -0.1f)
+            if (transform.localPosition.y < -0.15f)
             {
                 AddReward(fallPenalty);
                 //Debug.Log("<color=blue> ---I've Fallen And I can't Get up---</color>");
